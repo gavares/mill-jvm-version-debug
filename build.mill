@@ -1,0 +1,16 @@
+//| mill-version: 1.0.0-RC2-native
+//| mill-jvm-version: https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.27%2B6/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.27_6.tar.gz
+//| mvnDeps:
+//| - com.lihaoyi::mill-contrib-scalapblib:$MILL_VERSION
+//| - com.lihaoyi::mill-contrib-buildinfo:$MILL_VERSION
+//| - com.lihaoyi::mill-contrib-versionfile:$MILL_VERSION
+//| - com.lihaoyi::mill-contrib-docker:$MILL_VERSION
+package build
+
+import mill.*
+import mill.scalalib.*
+
+object root extends ScalaModule {
+
+  def scalaVersion = "2.13.16"
+}
